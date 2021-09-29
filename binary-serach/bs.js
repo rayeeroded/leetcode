@@ -3,13 +3,13 @@
  * @param {number} target
  * @return {number}
  */
-var search = function(nums, target) {
+var search = function (nums, target) {
   let a = 0, b = nums.length - 1
   return binarySearch(nums, a , b, target)
 }
 
-function binarySearch(nums, a , b, target) {
-  let i = Math.floor((a+b) / 2)
+function binarySearch (nums, a , b, target) {
+  let i = Math.floor((a + b) / 2)
      
   if (nums[i] === target) {
     return i
@@ -18,7 +18,7 @@ function binarySearch(nums, a , b, target) {
     return -1
   }
   else if (nums[i] > target) {
-    b = i -1 
+    b = i - 1 
   }
   else if (nums[i] < target) {
     a = i + 1
