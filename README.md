@@ -1,2 +1,2 @@
 # leetcode
-leet code problems
+leet code practice problems from https://leetcode.com/study-plan/algorithm
