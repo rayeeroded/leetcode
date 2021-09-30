@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.33% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/15</span>
+                <span class='fraction'>2/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.85% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/14</span>
+                <span class='fraction'>2/14</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,27 +92,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">/**
@@ -120,28 +120,28 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (nums, target) {
-  let a = 0, b = nums.length - 1
-  return binarySearch(nums, a, b, target)
+var search = <span class="fstat-no" title="function not covered" >fu</span>nction (nums, target) {
+  let a = <span class="cstat-no" title="statement not covered" >0,</span> b = <span class="cstat-no" title="statement not covered" >nums.length - 1</span>
+<span class="cstat-no" title="statement not covered" >  return binarySearch(nums, a, b, target)</span>
 }
 &nbsp;
-function binarySearch (nums, a, b, target) {
-  let i = Math.floor((a + b) / 2)
+function <span class="fstat-no" title="function not covered" >binarySearch </span>(nums, a, b, target) {
+  let i = <span class="cstat-no" title="statement not covered" >Math.floor((a + b) / 2)</span>
      
-  if (nums[i] === target) {
-    return i
+<span class="cstat-no" title="statement not covered" >  if (nums[i] === target) {</span>
+<span class="cstat-no" title="statement not covered" >    return i</span>
   } 
-  else <span class="missing-if-branch" title="if path not taken" >I</span>if (a &gt;= b) {
+  else <span class="cstat-no" title="statement not covered" >if (a &gt;= b) {</span>
 <span class="cstat-no" title="statement not covered" >    return -1</span>
   }
-  else if (nums[i] &gt; target) {
-    b = i - 1 
+  else <span class="cstat-no" title="statement not covered" >if (nums[i] &gt; target) {</span>
+<span class="cstat-no" title="statement not covered" >    b = i - 1 </span>
   }
-  else <span class="missing-if-branch" title="else path not taken" >E</span>if (nums[i] &lt; target) {
-    a = i + 1
+  else <span class="cstat-no" title="statement not covered" >if (nums[i] &lt; target) {</span>
+<span class="cstat-no" title="statement not covered" >    a = i + 1</span>
   }
     
-  return binarySearch(nums, a, b, target)
+<span class="cstat-no" title="statement not covered" >  return binarySearch(nums, a, b, target)</span>
 }
 &nbsp;
 module.exports = search</pre></td></tr></table></pre>
@@ -151,7 +151,7 @@ module.exports = search</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Sep 30 2021 10:28:34 GMT-0500 (Central Daylight Time)
+                at Thu Sep 30 2021 11:00:58 GMT-0500 (Central Daylight Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

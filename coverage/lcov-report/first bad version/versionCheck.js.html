@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>2/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">91.66% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>11/12</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/14</span>
+                <span class='fraction'>2/14</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -125,33 +125,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">34x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">33x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">29x</span>
-<span class="cline-any cline-yes">29x</span>
-<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">29x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,38 +169,38 @@
  * @param {function} isBadVersion()
  * @return {function}
  */
-var solution = function (isBadVersion) {
+var solution = <span class="fstat-no" title="function not covered" >fu</span>nction (isBadVersion) {
   /**
    * @param {integer} n Total versions
    * @return {integer} The first bad version
    */
-  return function (n) {
+<span class="cstat-no" title="statement not covered" >  return <span class="fstat-no" title="function not covered" >fu</span>nction (n) {</span>
     //from a - maybe good version (perhaps none was good)
     //to a b - bad version (there was at least one bad)
     //find the first bad one
-    return helper (1, n)
+<span class="cstat-no" title="statement not covered" >    return helper (1, n)</span>
   }
 &nbsp;
-  function helper (a, b) {
-    if (a === 1 &amp;&amp; isBadVersion(a)) {
-      return 1
+  function <span class="fstat-no" title="function not covered" >helper </span>(a, b) {
+<span class="cstat-no" title="statement not covered" >    if (a === 1 &amp;&amp; isBadVersion(a)) {</span>
+<span class="cstat-no" title="statement not covered" >      return 1</span>
     }
     //if 'a' is good and the following is bad -
     // we found the first bad one
-    if (a + 1 === b) {
-      <span class="missing-if-branch" title="else path not taken" >E</span>if (!isBadVersion(a) &amp;&amp; isBadVersion(b)) {
-        return b
+<span class="cstat-no" title="statement not covered" >    if (a + 1 === b) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!isBadVersion(a) &amp;&amp; isBadVersion(b)) {</span>
+<span class="cstat-no" title="statement not covered" >        return b</span>
       }
     }
 &nbsp;
     // check a version in the middle, and iterate the range
-    let i = Math.floor((a + b) / 2)
-    if (isBadVersion(i)) {
-      b = i
+    let i = <span class="cstat-no" title="statement not covered" >Math.floor((a + b) / 2)</span>
+<span class="cstat-no" title="statement not covered" >    if (isBadVersion(i)) {</span>
+<span class="cstat-no" title="statement not covered" >      b = i</span>
     } else {
-      a = i
+<span class="cstat-no" title="statement not covered" >      a = i</span>
     }
-    return helper(a, b)      
+<span class="cstat-no" title="statement not covered" >    return helper(a, b)      </span>
   }
 }
 &nbsp;
@@ -211,7 +211,7 @@ module.exports = solution</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Sep 30 2021 10:28:34 GMT-0500 (Central Daylight Time)
+                at Thu Sep 30 2021 11:00:58 GMT-0500 (Central Daylight Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
