@@ -9,6 +9,8 @@ module.exports = {
     'ecmaVersion': 12
   },
   'rules': {
+    'arrow-spacing': ['error', { 'before': true, 'after': true }],
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
     'space-before-function-paren': ['error'],
     'space-infix-ops': ['error'],
     'no-multi-spaces': [ 'error' ],

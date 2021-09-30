@@ -21,10 +21,10 @@ var solution = function (isBadVersion) {
     //from a - maybe good version (perhaps none was good)
     //to a b - bad version (there was at least one bad)
     //find the first bad one
-    return helper (1,n)
+    return helper (1, n)
   }
 
-  function helper (a,b) {
+  function helper (a, b) {
     if (a === 1 && isBadVersion(a)) {
       return 1
     }

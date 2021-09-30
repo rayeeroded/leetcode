@@ -5,10 +5,10 @@
  */
 var search = function (nums, target) {
   let a = 0, b = nums.length - 1
-  return binarySearch(nums, a , b, target)
+  return binarySearch(nums, a, b, target)
 }
 
-function binarySearch (nums, a , b, target) {
+function binarySearch (nums, a, b, target) {
   let i = Math.floor((a + b) / 2)
      
   if (nums[i] === target) {
@@ -24,7 +24,7 @@ function binarySearch (nums, a , b, target) {
     a = i + 1
   }
     
-  return binarySearch(nums, a , b, target)
+  return binarySearch(nums, a, b, target)
 }
 
 module.exports = search
