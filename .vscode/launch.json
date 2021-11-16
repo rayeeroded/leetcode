@@ -28,7 +28,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\binary-serach\\bs.js"
+            "program": "${workspaceFolder}\\create traingle\\createTirangle.js",
+            "console": "integratedTerminal"
         }
     ]
 }
